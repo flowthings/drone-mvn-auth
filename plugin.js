@@ -57,7 +57,7 @@ module.exports = {
       return acc;
     }, {});
 
-    const data = `<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><localRepository>${process.env.PWD}/.m2</localRepository><servers>${config.servers.map(generateServer).join('')}</servers><profiles>${config.profiles.map(generateProfile).join('')}</profiles><activeProfiles>${config.active_profiles.map(generateActiveProfile).join('')}</activeProfiles></settings>`;
+    const data = `<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><servers>${config.servers.map(generateServer).join('')}</servers><profiles>${config.profiles.map(generateProfile).join('')}</profiles><activeProfiles>${config.active_profiles.map(generateActiveProfile).join('')}</activeProfiles></settings>`;
     try {
       fs.writeFileSync('settings.xml', data);
       log('-- Maven authentication done!');
