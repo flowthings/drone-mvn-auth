@@ -1,3 +1,5 @@
+(Forked from https://github.com/robertstettner/drone-mvn-auth and used in Drone builds for [Brooklyn](https://github.com/flowthings/brooklyn))
+
 # drone-mvn-auth
 [![Build Status](https://travis-ci.org/robertstettner/drone-mvn-auth.svg?branch=master)](https://travis-ci.org/robertstettner/drone-mvn-auth)
 [![Coverage Status](https://coveralls.io/repos/github/robertstettner/drone-mvn-auth/badge.svg?branch=master)](https://coveralls.io/github/robertstettner/drone-mvn-auth?branch=master)
