@@ -1,3 +1,5 @@
+⚠️ This is no longer needed since now we use GitHub Actions instead of Drone for builds ⚠️
+
 (Forked from https://github.com/robertstettner/drone-mvn-auth and used in Drone builds for [Brooklyn](https://github.com/flowthings/brooklyn))
 
 (NOTE: in Drone, we pass the `maven_servers` secret with this form: `[{"id": "staging","username":"octavestage","password":"XXXX"},{"id": "prod","username":"octaveprod","password":"YYYY"}]`, where `XXXX`/`YYYY` are the corresponding the Azure storage account access keys. In dev environment, keep `staging` and `prod` but use `octavedev` credentials for both)
